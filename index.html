@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <title>Valor de tu moneda</title>
+</head>
+<body>
+    <header>
+        <h1>Conversor de Monedas</h1>
+    </header>
+    <main id="container">
+        
+        <label for="monedas_lista">Moneda base:</label>
+        <input list="lista_monedas" id="monedas_lista">
+        <datalist id="lista_monedas"></datalist>
+        
+        <label for="convertir">Convertir a:</label>
+        <input list="lista_convertir" id="convertir">
+        <datalist id="lista_convertir"></datalist>
+        
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" placeholder="Ingresa cantidad">
+        
+        <button id="convertir_btn">Convertir</button>
+    
+    <div id="resultado"></div>
+    </main>
+    <footer>
+        <div id="info-personal">
+            <p>
+                <strong>Desarrollador:</strong> Jorge Jacinto Ayvar
+            </p>
+            <p>
+                <strong>Profesor:</strong> César López Godoy
+            </p>
+            <p>
+                <strong>Proyecto escolar</strong>
+            </p>
+        </div>
+        <div id="redes-sociales">
+            <p class="box-social"><strong>Instagram:</strong> JacintoAyvar
+                <img class="logo" src="assets/img/instagram.png" alt="logo de instagram">
+            </p>
+            <p class="box-social"><strong>Facebook:</strong> JorgeAyvar
+                <img class="logo" src="assets/img/facebook.png" alt="logo de facebook">
+            </p>
+            <p class="box-social"><strong>Whatsapp:</strong> 7443216963
+                <img class="logo" src="assets/img/whatsapp.png" alt="logo de whatsapp">
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
