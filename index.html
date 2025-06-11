@@ -12,19 +12,21 @@
         <h1>Conversor de Monedas</h1>
     </header>
     <main id="container">
-        
-        <label for="monedas_lista">Moneda base:</label>
-        <input list="lista_monedas" id="monedas_lista">
-        <datalist id="lista_monedas"></datalist>
-        
-        <label for="convertir">Convertir a:</label>
-        <input list="lista_convertir" id="convertir">
-        <datalist id="lista_convertir"></datalist>
-        
-        <label for="cantidad">Cantidad:</label>
-        <input type="number" id="cantidad" placeholder="Ingresa cantidad">
-        
-        <button id="convertir_btn">Convertir</button>
+        <div>
+            <label for="divisa_lista">Escoge tu moneda:</label>
+            <input class="input_divisa" list="lista_divisa" id="divisa_lista">
+            <datalist id="lista_divisa"></datalist>
+        </div>
+        <div>
+            <label for="convertir">Convertir a:</label>
+            <input class="input_divisa" list="divisa_convertir" id="convertir">
+            <datalist id="divisa_convertir"></datalist>
+        </div>
+        <div>
+            <label for="cantidad">Cantidad:</label>
+            <input class="input_divisa" type="number" id="divisa_input" placeholder="Ingresa cantidad">
+        </div>
+        <button id="search_btn">Convertir</button>
     
     <div id="resultado"></div>
     </main>
@@ -41,15 +43,18 @@
             </p>
         </div>
         <div id="redes-sociales">
+            <a class="box-social" href="https://www.instagram.com/jacintoayvar/" target="_blank">
             <p class="box-social"><strong>Instagram:</strong> JacintoAyvar
                 <img class="logo" src="assets/img/instagram.png" alt="logo de instagram">
-            </p>
+            </p></a>
+            <a class="box-social" href="https://www.facebook.com/jorge.jacintoayvar" target="-blank">
             <p class="box-social"><strong>Facebook:</strong> JorgeAyvar
                 <img class="logo" src="assets/img/facebook.png" alt="logo de facebook">
-            </p>
+            </p></a>
+            <a href="https://wa.me/527443216963?text=Eres,%20la%20mera%20Verga!" target="_blank">
             <p class="box-social"><strong>Whatsapp:</strong> 7443216963
                 <img class="logo" src="assets/img/whatsapp.png" alt="logo de whatsapp">
-            </p>
+            </p></a>
         </div>
     </footer>
 </body>

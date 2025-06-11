@@ -1,12 +1,18 @@
 window.onload = () => {
-    const monedas_lista = document.querySelector('#monedas_lista');
-    const lista_monedas = document.querySelector('#lista_monedas');
+    const divisaLista = document.querySelector('#divisa_lista');
+    const listaDivisa = document.querySelector('#lista_divisa');
     const monedas_convertir = document.querySelector('#convertir');
-    const lista_convertir = document.querySelector('#lista_convertir');
-    const cantidad = document.querySelector('#cantidad');
+    const listaConvertir = document.querySelector('#divisa_convertir');
+    const divisaInput = document.querySelector('#divisa_input');
     const resultado = document.querySelector('#resultado');
-    const convertir_btn = document.querySelector('#convertir_btn');
+    const searchBtn = document.querySelector('#search_btn');
     const url = 'https://api.unirateapi.com/api/rates?api_key=r9xFpPH5rQen5sRprXRrc0tcXtG92cIl5rqHHVn6uVsZXsxSb1lEpQ52qxPFFVT8&';
+
+document.getElementById("divisa_input").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        document.getElementById("search_btn").click();
+    }
+})
 
     let tasas = {};
     let monedasArray = [];
@@ -27,17 +33,17 @@ window.onload = () => {
             optionBase.value = moneda;
             optionConvertir.value = moneda;
 
-            lista_monedas.appendChild(optionBase);
-            lista_convertir.appendChild(optionConvertir);
+            listaDivisa.appendChild(optionBase);
+            listaConvertir.appendChild(optionConvertir);
         });
     }
 
-    convertir_btn.addEventListener('click', mostrarResultado);
+    searchBtn.addEventListener('click', mostrarResultado);
 
     function mostrarResultado() {
-        const base = monedas_lista.value.toUpperCase();
+        const base = divisaLista.value.toUpperCase();
         const destino = monedas_convertir.value.toUpperCase();
-        const monto = parseFloat(cantidad.value);
+        const monto = parseFloat(divisaInput.value);
 
         if (monedasArray.includes(base) && monedasArray.includes(destino) && monto > 0 && tasas[base] && tasas[destino]) {
             const tasaBase = tasas[base];
@@ -49,7 +55,7 @@ window.onload = () => {
                 <p>${monto} ${base} equivale a ${totalConvertido.toFixed(4)} ${destino}</p>
             `;
         } else {
-            resultado.innerHTML = '<p>Por favor, ingresa una cantidad válida y selecciona monedas correctas.</p>';
+            resultado.innerHTML = '<p id="msg_error">Por favor, ingresa una cantidad válida y selecciona monedas correctas.</p>';
         }
     }
 };
