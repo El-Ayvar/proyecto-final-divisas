@@ -21,6 +21,7 @@ body {
     font-family:"Black", sans-serif;
     height: 100vh;
     justify-content: space-between;
+    overflow-x: hidden;
 }
 
 .box-social {
@@ -113,4 +114,102 @@ header {
     height: 11vh;
     justify-content: space-evenly;
     width: 50vw;
+}
+
+@media (min-width: 481.98px) {
+    body {
+        background-image: url(../assets/img/fondoTablet2.jpeg);
+    }
+
+    #container {
+        border: none;
+        font-size: 4.5vw;
+        height: 45vh;
+        text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000;
+    }
+
+    header {
+        background-color: rgba(255, 255, 255, 0.27);
+        border: none;
+    }
+
+    header h1 {
+        background: linear-gradient(to top, #000000, #902580);
+        border: none;
+        font-size: 6vw;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .box-social {
+        width: 28vw;
+    }
+
+    .logo {
+        width: 2vw;
+    }
+
+    #info-personal {
+        font-size: 1.6vw;
+    }
+
+    #redes-sociales {
+        font-size: 1.6vw;
+    }   
+}
+
+@media (min-width: 768.98px) {
+
+    body {
+        background-image: url("../assets/img/fondoLaptop.jpeg");
+    }
+
+    .box-social {
+        width: 16vw;
+    }
+    
+    button {
+        font-size: 2vw;
+        width: 15vw;
+    }
+    
+    #container {
+        font-size: 2.5vw;
+        width: 50vw;
+    }
+    
+    footer {
+        height: 8vh;
+    }
+    
+    header {
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-top: 1vw;
+    }
+    
+    .input_divisa {
+        font-size: 2vw;
+        height: 6vh;
+        width: 10vw;
+    }
+    
+    #info-personal {
+        flex-direction: row;
+        font-size: 0.9vw;
+    }
+    
+    .logo {
+        width: 1.7vw;
+    }
+    
+    #redes-sociales {
+        display: flex;
+        flex-direction: row;
+        font-size: 1vw;
+        justify-content: space-around;
+    }
+    
+    #resultado {
+        font-size: 2.5vw;
+    }
 }
