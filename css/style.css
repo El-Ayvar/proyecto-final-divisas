@@ -24,7 +24,7 @@ body {
     overflow-x: hidden;
 }
 
-.box-social {
+.box_social {
     align-items: center;
     color: rgb(206, 195, 179);
     display: flex;
@@ -75,7 +75,7 @@ header {
     margin-top: 7vw;
 }
 
-#info-personal {
+#info_personal {
     align-items: center;
     display: flex;
     font-size: 2vw;
@@ -106,7 +106,7 @@ header {
     font-size: 3.5vw;
 }
 
-#redes-sociales {
+#redes_sociales {
     align-items: center;
     display: flex;
     font-size: 2vw;
@@ -141,7 +141,7 @@ header {
         -webkit-text-fill-color: transparent;
     }
 
-    .box-social {
+    .box_social {
         width: 28vw;
     }
 
@@ -149,11 +149,11 @@ header {
         width: 2vw;
     }
 
-    #info-personal {
+    #info_personal {
         font-size: 1.6vw;
     }
 
-    #redes-sociales {
+    #redes_sociales {
         font-size: 1.6vw;
     }   
 }
@@ -164,7 +164,7 @@ header {
         background-image: url("../assets/img/fondoLaptop.jpeg");
     }
 
-    .box-social {
+    .box_social {
         width: 16vw;
     }
     
@@ -193,7 +193,7 @@ header {
         width: 10vw;
     }
     
-    #info-personal {
+    #info_personal {
         flex-direction: row;
         font-size: 0.9vw;
     }
@@ -202,7 +202,7 @@ header {
         width: 1.7vw;
     }
     
-    #redes-sociales {
+    #redes_sociales {
         display: flex;
         flex-direction: row;
         font-size: 1vw;
